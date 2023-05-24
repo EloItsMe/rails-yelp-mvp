@@ -6,5 +6,5 @@ class Restaurant < ApplicationRecord
   validates :phone_number, presence: true
   validates :category, presence: true
   validates :category, inclusion: { in: %w[chinese italian japanese french belgian],
-                                    message: "%{value} is not a valid size" }
+                                    message: '%<value> is not a valid size' }
 end
